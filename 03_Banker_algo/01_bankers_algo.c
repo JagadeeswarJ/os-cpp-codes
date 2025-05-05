@@ -72,15 +72,15 @@ int isSafe(int processes[], int avail[], int max[][MAX_RESOURCES], int allot[][M
 
 int main()
 {
-    int processes[MAX_PROCESSES] = {0, 1, 2, 3, 4};
+    int processes[MAX_PROCESSES] = {1,2,3,4,5};
     int avail[MAX_RESOURCES] = {3, 3, 2};
 
     int max[MAX_PROCESSES][MAX_RESOURCES] = {
         {7, 5, 3},
         {3, 2, 2},
         {9, 0, 2},
-        {2, 2, 2},
-        {4, 3, 3}};
+        {4, 2, 2},
+        {5, 3, 3}};
 
     int allot[MAX_PROCESSES][MAX_RESOURCES] = {
         {0, 1, 0},
