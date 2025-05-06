@@ -15,7 +15,7 @@ void FCFS(const vector<int> &req, int head)
         cout << r << " ";
         seek += abs(head - r);
         head = r;
-    }
+    }                
     cout << "\nTotal Seek Time: " << seek << endl;
 }
 
