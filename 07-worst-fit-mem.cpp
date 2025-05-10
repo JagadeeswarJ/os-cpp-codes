@@ -5,7 +5,6 @@ int main()
     vector<int> par = {20, 15, 40, 60, 25};
     int n = par.size();
     int mem = 25;
-    vector<int> 
     int worst_fit = INT_MIN;
     for (int i = 0; i < n; i++)
     {
@@ -14,6 +13,6 @@ int main()
             worst_fit = max(worst_fit, par[i]);
         }
     }
-    cout << "worst fit is " << worst_fit << endl;
+    cout << "Worst fit is " << worst_fit << endl;
     return 0;
 }

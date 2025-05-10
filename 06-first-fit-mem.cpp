@@ -9,15 +9,13 @@ int main()
     {
         if (mem <= par[i])
         {
-            std::cout << "first fit is " << par[i] << " at index " << i << std::endl;
+            cout << "First fit is " << par[i] << " at index " << i << endl;
             break;
         }
         else if (i == n - 1)
         {
-            std::cout << "No first fit found" << std::endl;
-            break;
+            cout << "No first fit found" << endl;
         }
     }
-
     return 0;
 }
