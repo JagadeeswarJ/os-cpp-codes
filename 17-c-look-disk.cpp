@@ -14,27 +14,31 @@ int main()
         else
             right.push_back(r);
     }
+
     sort(left.begin(), left.end());
     sort(right.begin(), right.end());
 
     cout << "Seek Sequence: ";
+
     for (int r : right)
     {
         cout << r << " ";
         seek += abs(head - r);
         head = r;
     }
+
     if (!left.empty())
     {
-        seek += abs(head - left[0]);
         head = left[0];
-        for (int r : left)
+        cout << head << " ";
+        for (int i = 1; i < left.size(); i++)
         {
-            cout << r << " ";
-            seek += abs(head - r);
-            head = r;
+            seek += abs(head - left[i]);
+            head = left[i];
+            cout << head << " ";
         }
     }
+
     cout << "\nTotal Seek Time: " << seek << endl;
     return 0;
 }
